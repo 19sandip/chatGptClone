@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 
 const threadSchema = new Schema({
-  userId: mongoose.Schema.Types.ObjectId,
+  userId: Schema.Types.ObjectId,
   title: String,
   createdAt: { type: Date, default: Date.now },
   updatedAt: { type: Date, default: Date.now },
