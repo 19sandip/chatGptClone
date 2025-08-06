@@ -1,0 +1,55 @@
+.sidebar{
+    height: 100%;
+    padding: .2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sidebar_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding-top: .2rem;
+
+    padding-bottom: 2rem;
+}
+
+.chatgpt_logo{
+   background : #fff;
+   border-radius: 100%;
+   height: 2rem;
+}
+
+.btn{
+   background: none;
+   color: white;
+   border: none;
+   cursor: pointer;
+   font-size: 1.1rem;
+}
+
+
+
+.chat_history{
+    display: flex;
+    padding: .3rem;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 200;
+   overflow-y: auto;
+}
+
+.thread{
+ height: 2rem;
+ width: 100%;
+ border-radius: 10px;
+ padding-left: .6rem;
+}
+
+.thread:hover{
+    background-color: #ffffff27;
+
+}

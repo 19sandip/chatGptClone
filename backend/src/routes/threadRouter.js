@@ -1,8 +1,11 @@
-import {router} from "express";
+import {Router} from "express";
 import threadController from "../controllers/threadController.js";
 
-router.route("/save").post(threadController.saveThread);
-router.route("/getAllThread").get(threadController.getAllThread);
-router.route("/deleteThread").get(threadController.deleteThread);
+const threadRouter = Router();
 
-export default router;
+
+threadRouter.route("/save").post(threadController.saveThread);
+threadRouter.route("/getAllThread").get(threadController.getAllThread);
+threadRouter.route("/deleteThread").get(threadController.deleteThread);
+
+export default threadRouter;
